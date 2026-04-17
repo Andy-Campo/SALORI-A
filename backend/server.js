@@ -12,8 +12,8 @@ app.use(express.json());
 app.post('/api/chat', (req, res) => {
   const { message, history } = req.body;
 
-  console.log(`[MEMORIA] Mensajes previos en sesión: ${history.length}`);
-  
+  console.log(`[MEMORIA ] Mensajes previos en sesión: ${history.length}`);
+
   console.log(`[SALORI-A LOG]: Nuevo mensaje -> ${message}`);
 
   if (!message) {
